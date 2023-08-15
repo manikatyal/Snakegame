@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+   margin: 0;
+}
+.body{
+    background-image: url("gimg/bg.jpg");
+    background-size: 125vw 110vh ;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;/*these 2 lines is to keep the board which is inside the body to be kept in center*/
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(107, 255, 107),rgb(255, 255, 34));
+    width: 90vmin;
+    border: 5px solid brown;
+    height: 92vmin;
+    display: grid;
+    grid-template-rows:repeat(18,1fr);
+    grid-template-columns:repeat(18,1fr) ;
+}
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.1);
+    border-radius: 14px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    transform: scale(0.9);
+    border-radius: 16px;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid wheat;
+    border-radius:30px;
+    transform: scale(0.9);
+   
+}
+#scorebox{
+    position: fixed;
+    top:59px;
+    right:200px;
+    font-size: 33px;
+    font-weight: bold;
+} 
+#highscorebox{
+    position: fixed;
+    top:9px;
+    right:140px;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+#up{
+    background-image: url('gimg/keyboard_key_up.png');
+    background-size: contain;
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:70%;
+    right: 200px;
+}
+#down{
+   
+    background-image: url('gimg/keyboard_key_down.png');
+    background-size: contain;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:76%;
+    right: 200px;
+}
+#right{
+    background-image: url('gimg/keyboard_key_right.png');
+    background-size: contain;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:76%;
+    right: 152px;
+}
+#left{
+    background-image: url('gimg/keyboard_key_left.png');
+    background-size: contain;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:76%;
+    right: 247px;
+}
